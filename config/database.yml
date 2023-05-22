@@ -47,6 +47,4 @@ test:
 #
 production:
   <<: *default
-  database: rent_home_now_api_production
-  username: rent_home_now_api
-  password: <%= ENV["RENT_HOME_NOW_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
